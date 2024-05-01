@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+   <style>
+    body{
+        margin: 0;
+        padding: 0;
+         background-image: url(https://img.pikbest.com/backgrounds/20190731/calculation-digital-information-background-v_1517911jpg!f305cw);
+        background-size: cover;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        border: 10px solid brown;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        background-color: black;
+        background-image: url(https://img.pikbest.com/backgrounds/20190731/calculation-digital-information-background-v_1517911jpg!f305cw);
+        background-size: cover;
+
+    }
+  
+    p{
+        display: flex;
+    }
+    button{
+        display: flex;
+        border: 7px solid floralwhite;
+        margin: 0px 3px;
+        border-radius: 20px;
+        width: 40px;
+        color: whitesmoke;
+        background-color: blueviolet;
+        font-size: large;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .ab{
+        border: 7px solid brown;
+        background-color: whitesmoke;
+        
+    }
+   button:hover{
+    background-color: red;
+    border-color: ;
+    color: black;
+    transform: scale(1.2);
+    transition: 1s;
+   }
+    @media only screen and (max-width:550px) {
+        .main{
+            width: 100%;
+        }
+        
+    }
+    @media only screen and (max-width:850px) {
+        .main{
+            width: 70%;
+        }
+        
+    }
+    @media only screen and (min-width:1850px){
+        .main{
+            width: 15%;
+        }
+    }
+   </style>
+<body>
+
+    <div class="main">
+        <p class="ab"><input id="inp" type="text"></p>
+        <br>
+        <p>
+            <button onclick="cleared()" class="clear">AC</button>
+            <button onclick="clearAll()" class="clear all">C</button>
+            <button onclick="clicked('%')">%</button>
+            <button onclick="clicked('/')">/</button>
+        </p>
+
+        <p><button onclick="clicked(9)">9</button>
+        <button onclick="clicked(8)">8</button>
+        <button onclick="clicked(7)">7</button>
+        <button onclick="clicked('+')">+</button></p>
+        <br>
+
+        <p><button onclick="clicked(6)">6</button>
+        <button onclick="clicked(5)">5</button>
+        <button onclick="clicked(4)">4</button>
+        <button onclick="clicked('-')">-</button></p>
+        <br>
+
+        <p><button onclick="clicked(3)">3</button>
+        <button onclick="clicked(2)">2</button>
+        <button onclick="clicked(1)">1</button>
+        <button onclick="clicked('*')">*</button></p>
+        <br>
+
+        <p><button onclick="clicked(0)">0</button>
+        <button onclick="clicked('00')">00</button>
+        <button onclick="clicked('.')">.</button>
+        <button onclick="equal()">=</button></p>
+        <br>
+
+    </div>
+
+
+    <script src="app.js"> </script>
+</body>
+</html>
